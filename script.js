@@ -10,15 +10,24 @@ function computerPlay() {
 
 // document.querySelector("#submit").addEventListener("click", playRound)
 
+// function playerPlay() {
+//     let playerChoice = prompt("Rock, Paper, or Scissors?");
+//     if (playerChoice.toLowerCase() === "rock") {
+//         playerChoice = "Rock";
+//     } else if (playerChoice.toLowerCase() === "paper") {
+//         playerChoice = "Paper";
+//     } else if (playerChoice.toLowerCase() === "scissors") {
+//         playerChoice = "Scissors";
+//     } else {
+//         alert("Please choose rock, paper, or scissors.")
+//         playerChoice = playerPlay();
+//     }
+//     return playerChoice;
+// }
+
 function playerPlay() {
-    let playerChoice = prompt("Rock, Paper, or Scissors?");
-    if (playerChoice.toLowerCase() === "rock") {
-        playerChoice = "Rock";
-    } else if (playerChoice.toLowerCase() === "paper") {
-        playerChoice = "Paper";
-    } else if (playerChoice.toLowerCase() === "scissors") {
-        playerChoice = "Scissors";
-    } else {
+    let playerChoice = prompt("Rock, Paper, or Scissors?").toLowerCase();
+    if (playerChoice !== "rock" && playerChoice !== "paper" && playerChoice !== "scissors") {
         alert("Please choose rock, paper, or scissors.")
         playerChoice = playerPlay();
     }
