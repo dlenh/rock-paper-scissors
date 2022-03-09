@@ -47,23 +47,23 @@ function playRound(playerSelection, computerSelection) {
     // playerSelection = prompt("Rock, Paper, or Scissors?");
     // let playerSel = playerselection.toLowerCase();
     if (playerSelection === "rock" && computerSelection === "Scissors") {
-        return "You win! Rock beats Scissors!";
+        return `You win! Rock beats ${computerSelection}!`;
     } else if (playerSelection === "rock" && computerSelection === "Rock") {
         return TIE;
     } else if (playerSelection === "rock" && computerSelection === "Paper") {
-        return "You lose! Paper beats Rock!";
+        return `You lose! ${computerSelection} beats Rock!`;
     } else if (playerSelection === "paper" && computerSelection === "Scissors") {
-        return "You lose! Scissors beats Paper!";
+        return `You lose! ${computerSelection} beats Paper!`;
     } else if (playerSelection === "paper" && computerSelection === "Rock") {
-        return "You win! Paper beats Rock!";
+        return `You win! Paper beats ${computerSelection}!`;
     } else if (playerSelection === "paper" && computerSelection === "Paper") {
         return TIE;
     } else if (playerSelection === "scissors" && computerSelection === "Scissors") {
         return TIE;
     } else if (playerSelection === "scissors" && computerSelection === "Rock") {
-        return "You lose! Rock beats Scissors!";
+        return `You lose! ${computerSelection} beats Scissors!`;
     } else if (playerSelection === "scissors" && computerSelection === "Paper") {
-        return "You win! Scissors beats Paper";
+        return `You win! Scissors beats ${computerSelection}`;
     }
 }
 
