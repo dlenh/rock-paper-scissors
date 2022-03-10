@@ -11,24 +11,20 @@ body {
 
 .selection {
     display: flex;
-    justify-content: space-around;
-    padding-top: 5vh;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 2vh;
 }
 
 .selection div {
-    height: 200px;
-    width: 200px;
+    height: 10vh;
+    width: 10vw;
     /* border: 2px solid black; */
 }
 
 div img {
-    height: 200px;
-    width: 200px;
-}
-
-h1,
-p {
-    text-align: center;
+    height: auto;
+    width: 100%;
 }
 
 /* .character {
@@ -42,14 +38,20 @@ p {
     height: auto;
 } */
 
-/* .red-cont {
-    width: 10vw;
+.red-cont,
+.blue-cont {
+    width: 18vw;
 }
 
 .red-cont .red {
+    width: 75%;
+    height: auto;
+}
+
+.blue-cont .blue {
     width: 100%;
     height: auto;
-} */
+}
 
 .pokemon {
     height: auto;
@@ -59,10 +61,9 @@ p {
 }
 
 .vs {
-    height: auto;
-    max-width: 100%;
+    height: 12vh;
+    max-width: 12vw;
     align-self: center;
-    flex: 0 0 auto;
 }
 
 .sprites {
@@ -81,4 +82,21 @@ p {
 .left,
 .right {
     align-self: center;
+}
+
+.playerSel,
+.rivalSel {
+    height: 13vh;
+    width: 13vw;
+}
+
+h1,
+p,
+.playerSel h2,
+.rivalSel h2,
+.grass h2,
+.fire h2,
+.water h2,
+h3 {
+    text-align: center;
 }
