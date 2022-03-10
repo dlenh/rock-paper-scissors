@@ -11,36 +11,40 @@
     </head>
     <body>
         <h1>Grass, Fire, Water</h1>
-        <p>Grass beats Water, Water beats Fire, Fire beats Grass</p>
+        <p>Choose a type to beat your rival! First to 5 wins!</p>
         <section class="sprites">
-            <!-- <div class="red-cont"> -->
+            <div class="red-cont">
                 <img class="character red" src="images/red.png" alt="protagonist" width="125" height="270">
-            <!-- </div> -->
+            </div>
             <section class="left">
-                <div>
-                    <img class="pokemon player" src="images/ditto-flip.gif" alt="player's choice pokemon">
-                </div>
-                <h2>Player Score:</h2>
+                <div class="playerSel">
+                    <img id="playerSel" class="pokemon player" src="images/ditto-flip.gif" alt="player's choice pokemon">
+                    <h3 id="playerScore">Player Score: 0</h2>
+                </div> 
             </section>
             <img class="vs" src="images/vs.png" alt="versus symbol">
             <section class="right">
-                <img class="pokemon rival" src="images/ditto.gif" alt="computer's choice pokemon">
-                <h2>Rival Score:</h2>
+                <div class="rivalSel">
+                    <img id= "rivalSel" class="pokemon rival" src="images/ditto.gif" alt="computer's choice pokemon">
+                    <h3 id="rivalScore">Rival Score: 0</h2>
+                </div>
             </section>
-            <img class="character blue" src="images/blue.png" alt="antagonist" width="162" height="270">
+            <div class="blue-cont">
+                <img class="character blue" src="images/blue.png" alt="antagonist" width="162" height="270">
+            </div>
         </section>
-        <h3 class="outcome"></h3>
+        <h3 id="outcome">Grass beats Water, Water beats Fire, Fire beats Grass</h3>
         <section class="selection">
             <div class="grass">
-                <img src="images/grass.png" alt="grass icon">
+                <img id="grass" src="images/grass.png" alt="grass icon">
                 <h2>Grass</h2>
             </div>
             <div class="fire">
-                <img src="images/fire.png" alt="fire icon">
+                <img id="fire" src="images/fire.png" alt="fire icon">
                 <h2>Fire</h2>
             </div>
             <div class="water">
-                <img src="images/water.png" alt="water icon">
+                <img id="water" src="images/water.png" alt="water icon">
                 <h2>Water</h2>
             </div>
         </section>
